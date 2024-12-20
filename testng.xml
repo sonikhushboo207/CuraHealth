@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.cura.qa.report.ITestListenerClass">
+		</listener>
+	</listeners>
+	
+	<test thread-count="5" name="Test">
+		<classes>
+		    <class name="com.cura.qa.base.TestBase" />
+			<class name="com.cura.qa.test.LoginTest" />
+			<class name="com.cura.qa.test.HomePageTest" />
+			<class name="com.cura.qa.test.AppointmentPageTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
